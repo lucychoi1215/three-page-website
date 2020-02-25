@@ -24,8 +24,9 @@
   /* places buttons aside each other */
   display: flex;
   justify-content: space-between;
-  margin-top: 10pt;
+  margin: 2vmin;
   font-family: 'Montserrat', sans-serif;
+  font-size:1.5vmin;
   color: #ffffff;
 }
 
@@ -33,10 +34,10 @@
 .MainTitleText {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  font-size: 32pt;
+  font-size: 5vmin;
   color: #ffffff;
-  padding-top: 288pt;
-  padding-left: 32pt;
+  padding-top: 50vh;
+  padding-left: 5vw;
 }
 
 /* Quotes just below the hero banner */
@@ -44,7 +45,7 @@
   display: flex;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 16pt;
+  font-size: 3vmin;
   text-align: center;
   height: 30%;
   line-height: 1.5;
@@ -52,16 +53,17 @@
 
 /* sets the width of each of the slogan containers to be half of the parent div- slogan  */
 .SloganLeft, .SloganRight {
-  width: 50%;
-  margin: 60px;
+  width: 50vw;
+  margin: 5vmin;
   align-self: center;
+  justify-content: center;
 }
 
 /* Sets the text in the SloganLeft div to have a greater font-weight, directing the user to read the text on the left then the text on the right */
 .SloganLeft {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  font-size: 16pt;
+  font-size: 3vmin;
 }
 
 /* holds SummaryImageContainer and SummaryTextContainer and displays both containers on the same row */
@@ -74,7 +76,8 @@
 /* Sets container width a half of its parent div */
 .SummaryImageContainer {
   width: 50%;
-  margin: 60px;
+  height: auto;
+  margin: 5vmin;
 }
 
 /* Sets container width a half of its parent div */
@@ -84,19 +87,21 @@
   align-self: center;
   line-height: 1.5;
   font-family: 'Montserrat', sans-serif;
-  margin: 60px;
+  font-size: 2vmin;
+  margin: 5vmin ;
 }
 
 .SummaryTextContainer h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  font-size: 32pt;
+  font-size: 5vmin;
   padding-bottom: 3%;
 }
 
 .SummaryImage {
   object-fit: cover;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
 }
@@ -105,11 +110,11 @@
 .button{
   border: none;
   background: none;
-  padding: 16px 32px;
+  padding: 1.5vmin 3vmin;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 3vmin;
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
@@ -138,23 +143,18 @@
   border: black solid 1pt;
 }
 
-/*
-.Button {
-  padding-right: 30pt;
-} */
-
 /* Text styling and alignment in the About page (index2.html) */
 .AboutTextContainer {
   width: 100%;
   line-height: 1.5;
   font-family: 'Montserrat', sans-serif;
-  margin-right: 60px;
+  font-size: 2vmin;
 }
 
 .AboutTextContainer h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  font-size: 32pt;
+  font-size: 5vmin;
   padding-top: 3%;
 }
 
@@ -187,13 +187,14 @@
 
 /* Styling of Text in the MainSecondContainer of index2.html */
 #MainSecondContainer {
-  margin: 60px;
+  margin: 5vmin;
   line-height: 1.5;
   font-family: 'Montserrat', sans-serif;
 }
 
 /* Styling of Text in the MainThirdContainer of index3.html */
 #MainThirdContainer {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -203,15 +204,47 @@
   width: 33%;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  margin: 60px;
+  font-size: 2vmin;
+  margin: 5vmin;
   background-color: #fff6ed;
-  padding-bottom: 3%;
 }
+
+/* Styling and rearrangement of divs in middle FAQ box on index3.html */
+#faqContainer2 {
+  width: 33%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 2vmin;
+  margin: 5vmin;
+  background-color: #fff6ed;
+  /* sets text div and image div inside faqContainer2 arranged in a column */
+  flex-direction: column;
+
+}
+
+#faqText h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size:  3vmin;
+  text-align: center;
+  padding: 3%;
+  margin: 10%;
+
+}
+
+#faqText p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 
 #faqContainer h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  font-size:16pt;
+  font-size:3vmin;
   text-align: center;
   padding: 3%;
   margin: 10%;
@@ -227,8 +260,18 @@
   margin-right: 10%;
 }
 
+#faqText {
+  width: 100%;
+}
+
+/* sets the image container to be 50% the height of faqContainer2 */
+#faqImageContainer {
+width: 100%;
+height: 50%;
+}
+
 #faqImage {
   object-fit: cover;
   width: 100%;
-  height: 60%;
+  height: 100%;
 }
